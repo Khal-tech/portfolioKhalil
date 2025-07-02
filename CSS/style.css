@@ -1,0 +1,402 @@
+/* EXO 2 */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Lobster+Two&family=Montagu+Slab:opsz@16..144&family=Montserrat+Alternates&display=swap');
+
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+    scroll-behavior: smooth;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* >>> Navigation Bar Start <<< */
+.logo{
+    filter: drop-shadow(0px 0px 2px #fff);
+    animation: shadow 0.9s linear infinite;
+}
+@keyframes shadow {
+    50%{
+        filter: drop-shadow(0px 0px 4px #fff);
+    }
+}
+nav ul li{
+    list-style: none !important;
+}
+.active_nav{
+    transform: scale(1.4);
+    filter: drop-shadow(0px 0px 6px #ff2600);
+}
+.nav_link{
+    transition: all .9s ease !important;
+}
+.nav_link:hover{
+    transform: scale(1.4);
+    filter: drop-shadow(0px 0px 6px #ff2600);
+}
+.kh-logo{
+    width: 65px !important;
+}
+
+nav ul li:nth-child(1){
+    position: relative !important;
+    left: -250px !important;
+    animation: slide_right1 1.5s forwards 0.4s !important;
+}
+@keyframes slide_right1 {
+    100%{
+        transform: translateX(250px);
+    }
+}
+nav ul li:nth-child(2){
+    position: relative !important;
+    left: -250px !important;
+    animation: slide_right2 1.5s forwards 0.8s !important;
+}
+@keyframes slide_right2 {
+    100%{
+        transform: translateX(250px);
+        opacity: calc(20%) !important;
+    }
+}
+nav ul li:nth-child(3){
+    position: relative !important;
+    left: -250px !important;
+    animation: slide_right3 1.5s forwards 1.2s !important;
+}
+@keyframes slide_right3 {
+    100%{
+        transform: translateX(250px);
+        opacity: calc(20%) !important;
+    }
+}
+nav ul li:nth-child(4){
+    position: relative !important;
+    left: -250px !important;
+    animation: slide_right4 1.5s forwards 1.6s !important;
+}
+@keyframes slide_right4 {
+    100%{
+        transform: translateX(250px);
+        opacity: calc(20%) !important;
+    }
+}
+
+
+/* >>> Sevices Page Responsive Start <<< */
+@media only screen and (height<=400px) {
+    .nav_link{
+        font-size: 12px !important;
+    }
+    .kh-logo{
+        width: 65px !important;
+        height: 55px !important;
+    }
+}
+@media only screen and (width<=450px) {
+    .nav_link{
+        font-size: 10px !important;
+    }
+    .kh-logo{
+        width: 45px !important;
+        height: 40px !important;
+    }
+}
+/* >>> Sevices Page Responsive End <<< */
+
+/* >>> Navigation Bar End <<< */
+
+
+/* >>> Home Page Start <<< */
+.home-page{
+    background: linear-gradient(225deg, rgba(6, 5, 5, 0.990) 0%, rgb(19, 19, 23) 8%, rgb(5, 5, 6) 16%, rgb(13, 13, 16) 27%, rgb(18, 18, 20) 44%, rgb(5, 5, 6) 63%, rgb(17, 19, 20) 87%, rgba(0,0,0,1) 100%) !important;
+    height: 100vh !important;
+    width: 100% !important;
+    background-size: cover !important;
+}
+.home-text span{
+    color: #ff4f14 !important;
+    text-shadow: 0px -1.5px 3px #b34a00 ,0px -2px 4px #940202 ;
+    animation: shadow2 0.6s linear infinite alternate;
+}
+@keyframes shadow2 {
+    50%{
+        text-shadow: 0px -3px 8px #b14a00, 0px -10px 12px #4d0707 ;
+    }
+}
+.pic-khalil [data-aos-duration='1500'] [data-aos],
+[data-aos][data-aos][data-aos-duration='1500'] {
+    animation-duration: 1500ms;
+}
+
+/* >>> Home Page Responsive Start <<< */
+@media only screen and (width<=768px) {
+    .home-text h2{
+        font-size: 23px !important;
+    }
+    .home-text p{
+        font-size: 15px !important;
+    }
+}
+/* >>> Home Page Responsive Start <<< */
+
+/* >>> Home Page End <<< */
+
+
+/* >>> About Page Start <<< */
+.about-page{
+    background-image: url(../IMG/Backgrounds/bg-heexa.png);
+    width: 100% !important;
+    height: 100vh !important;
+    background-size: cover !important;
+}
+.about-page span{
+    color: #ff4f14 !important;
+    text-shadow: 0px -1.5px 3px #b34a00 ,0px -2px 4px #940202 ;
+    animation: shadow2 0.9s linear infinite alternate;
+}
+.skills{
+    display: flex !important;
+    justify-content: space-evenly !important;
+}
+.html, .css, .js,.design ,.co-work ,.work-alone{
+    width: 250px !important;
+    height: 15px !important;
+    background-color: #00000000 !important;
+    margin: 5px !important;
+    border-radius: 50px;
+    box-shadow: 0px 0px 3px #dc3700;
+    animation: shadow1 0.9s linear infinite;
+}
+@keyframes shadow1 {
+    50%{
+        box-shadow: 0px 0px 7px #dc3700;
+    }
+}
+
+/* >>> Skills HTML CSS JSS DESIGN CO-WORK WORKING-ALONE Start <<< */
+.fill-html{
+    width: 70% !important;
+    height: 100% !important;
+    background-color: #ff4000 !important;
+    border-radius: 50px;
+}
+.fill-css{
+    width: 85% !important;
+    height: 100% !important;
+    background-color: #ff4000 !important;
+    border-radius: 50px;
+}
+.fill-js{
+    width: 40% !important;
+    height: 100% !important;
+    background-color: #ff4000 !important;
+    border-radius: 50px;
+}
+.fill-design{
+    width: 75% !important;
+    height: 100% !important;
+    background-color: #ff4000 !important;
+    border-radius: 50px;
+}
+.fill-co-work{
+    width: 56% !important;
+    height: 100% !important;
+    background-color: #ff4000 !important;
+    border-radius: 50px;
+}
+.fill-work-alone{
+    width: 93% !important;
+    height: 100% !important;
+    background-color: #ff4000 !important;
+    border-radius: 50px;
+}
+/* >>> Skills HTML CSS JSS DESIGN CO-WORK WORKING-ALONE End <<< */
+
+/* >>> AOS About Page Start <<< */
+.fill [data-aos-duration='2000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='2000'] {
+    animation-duration: 2000ms;
+}
+.about-me-title [data-aos-duration='1000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='1000'] {
+    cursor: default;
+    animation-duration: 1000ms;
+}
+/* >>> AOS About Page End <<< */
+
+/* >>> About Page Responsive Start <<< */
+@media only screen and (width<=630px) {
+    .main-about h1{
+        font-size: 20px !important;
+    }
+    .main-about h6{
+        font-size: 13px !important;
+    }
+    .html, .css, .js,.design ,.co-work ,.work-alone{
+        width: 180px !important;
+        height: 11px !important;
+        background-color: #00000000 !important;
+        margin: 5px !important;
+        border-radius: 50px;
+        box-shadow: 0px 0px 3px #dc3700;
+        animation: shadow1 0.9s linear infinite;
+    }
+    @media only screen and (width<=450px) {
+        .main-about h1{
+            font-size: 16px !important;
+        }
+        .html, .css, .js,.design ,.co-work ,.work-alone{
+            width: 140px !important;
+            height: 10px !important;
+            background-color: #00000000 !important;
+            margin: 5px !important;
+            border-radius: 50px;
+            box-shadow: 0px 0px 3px #dc3700;
+            animation: shadow1 0.9s linear infinite;
+        } 
+    }
+    @media only screen and (width<=375px){
+        .main-about .skills h6{
+            font-size: 10px !important;
+        }
+        .html, .css, .js,.design ,.co-work ,.work-alone{
+            width: 100px !important;
+            height: 7px !important;
+            background-color: #00000000 !important;
+            margin: 5px !important;
+            border-radius: 50px;
+            box-shadow: 0px 0px 3px #dc3700;
+            animation: shadow1 0.9s linear infinite;
+        } 
+    }
+}
+/* >>> About Page Responsive End <<< */
+
+/* >>> About Page End <<< */
+
+
+/* >>> Services Page <<< */
+.services-page{
+    background-image: url(../IMG/Backgrounds/bg-hexa.png);
+    width: 100% !important;
+    height: 100vh !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+.services-page span{
+    letter-spacing: calc(2px);
+    color: #ff4f14 !important;
+    text-shadow: 0px -1.5px 3px #b34a00 ,0px -2px 4px #940202 ;
+    animation: shadow2 0.9s linear infinite alternate;
+}
+.service{
+    transition: all 0.5s ease;
+    color: #f8f9fa !important;
+    height: fit-content !important;
+}
+.service:hover{
+    transition: all 0.5s ease;
+    background-color: #ef3f05 !important;
+    color: #212529 !important;
+    transform: translateY(-10px);
+}
+.service h3, .service p{
+    cursor: default;
+}
+
+/* >>> Sevices Page Responsive Start <<< */
+@media only screen and (width<=768px) {
+    .service{
+        transition: all 0.5s ease;
+        color: #f8f9fa !important;
+        width: fit-content !important;
+        height: fit-content !important;
+        font-size: 13px !important;
+    }
+    .service h3{
+        font-size: 16px;
+    }
+
+    @media only screen and (width<=620px){
+        .service{
+            transition: all 0.5s ease;
+            color: #f8f9fa !important;
+            width: fit-content !important;
+            height: fit-content !important;
+            font-size: 12px !important;
+        }
+        .service h3{
+            font-size: 12px;
+        }
+    }
+
+    @media only screen and (width<=480px) {
+        .services{
+            flex-direction: column !important;
+        }
+        .service{
+            transition: all 0.5s ease;
+            color: #f8f9fa !important;
+            width: fit-content !important;
+            height: fit-content !important;
+            font-size: 11px !important;
+        }
+        .service h3{
+            font-size: 10px;
+        }
+    }
+}
+/* >>> Sevices Page Responsive End <<< */
+
+/* >>> Services Page End <<< */
+
+
+/* >>> Contact Page Start <<< */
+.contact-page{
+    background: url(../IMG/Backgrounds/27_black_abstract.png);
+    width: 100% !important;
+    height: 100vh !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+.contact-page span{
+    color: #ff4f14 !important;
+    text-shadow: 0px -1.5px 3px #b34a00 ,0px -2px 4px #940202 ;
+    animation: shadow2 0.9s linear infinite alternate;
+}
+.contact-page textarea::placeholder{
+    color: #b0b2b3 !important;
+}
+.contact-page button{
+    letter-spacing: calc(1px);
+}
+.khalil{
+    filter: drop-shadow(0px 0px 9px #000000);
+}
+
+/* >>> Contact Page Responsive Start <<< */
+@media only screen and (width<=700px) {
+    .contact-page h1 , .contact-page h3{
+        font-size: 17px !important;
+    }
+}
+    @media only screen and (height<=500px) {
+        .contact-page h1 , .contact-page h3{
+            font-size: 17px !important;
+        }
+    }
+    @media only screen and (width<=480px){
+        .contacts{
+            flex-direction: column !important;
+        }
+        .contact-page h1 , .contact-page h3{
+            font-size: 15px !important;
+        }
+    }
+        @media only screen and (height<=500px){
+            .contact-page h1 , .contact-page h3{
+                font-size: 15px !important;
+            }
+        }
+/* >>> Contact Page Responsive End <<< */
+
+/* >>> Contact Page End <<< */
